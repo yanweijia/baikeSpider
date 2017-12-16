@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="off" monitorInterval="1800">
+    <properties>
+        <!-- dir -->
+        <property name="LOG_HOME">logs/</property>
+        <!-- filename -->
+        <property name="FILE_NAME">payment</property>
+        <!-- logSystem -->
+        <property name="LOG_SYSTEM_HOME">logs/</property>
+        <property name="LOG_SYSTEM_FILE">log</property>
+    </properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n"/>
+        </Console>
+        <RollingRandomAccessFile name="RollingLog"
+                                 fileName="${LOG_HOME}/${FILE_NAME}.log"
+                                 filePattern="${LOG_HOME}/${FILE_NAME}.log.%d{yyyy-MM-dd}.gz">
+            <PatternLayout
+                    pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!--
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+                -->
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingRandomAccessFile>
+
+        <File name="logSystem" fileName="${LOG_SYSTEM_HOME}/${LOG_SYSTEM_FILE}" append="false">
+            <PatternLayout pattern="%d{HH:mm:ss} %-5level %class{36}  %L %M - %msg%xEx%n"/>
+        </File>
+        <RollingRandomAccessFile name="logSystemRollingLog" fileName="${LOG_SYSTEM_HOME}/${LOG_SYSTEM_FILE}.log"
+                                 filePattern="${LOG_SYSTEM_HOME}/${LOG_SYSTEM_FILE}.log.%d{yyyy-MM-dd}.gz">
+            <PatternLayout
+                    pattern=" %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingRandomAccessFile>
+
+    </Appenders>
+    <loggers>
+        <root level="DEBUG" includeLocation="true">
+            <appender-ref ref="RollingLog"/>
+            <appender-ref ref="Console"/>
+            <!--<appender-ref ref="LogStashSocket" />-->
+        </root>
+        <Logger name="logSystem" additivity="TRUE" level="INFO">
+            <AppenderRef ref="logSystem" level="INFO"/>
+            <AppenderRef ref="logSystemRollingLog" level="INFO"/>
+        </Logger>
+    </loggers>
+
+
+</configuration>

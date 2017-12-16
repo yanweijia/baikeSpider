@@ -1,0 +1,196 @@
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten] MongoDB starting : pid=1354 port=27017 dbpath=/Users/weijia/Applications/mongodbfile/ 64-bit host=WEIJIAdeMacBook-Pro.local
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten] db version v3.4.10
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten] git version: 078f28920cb24de0dd479b5ea6c66c644f6326e9
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2m  2 Nov 2017
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten] allocator: system
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten] modules: none
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten] build environment:
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-12-16T01:01:53.771+0800 I CONTROL  [initandlisten] options: { storage: { dbPath: "/Users/weijia/Applications/mongodbfile/" } }
+2017-12-16T01:01:53.771+0800 W -        [initandlisten] Detected unclean shutdown - /Users/weijia/Applications/mongodbfile/mongod.lock is not empty.
+2017-12-16T01:01:53.773+0800 I -        [initandlisten] Detected data files in /Users/weijia/Applications/mongodbfile/ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-12-16T01:01:53.773+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-12-16T01:01:53.773+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-12-16T01:01:54.231+0800 I CONTROL  [initandlisten] 
+2017-12-16T01:01:54.231+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-12-16T01:01:54.231+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-12-16T01:01:54.231+0800 I CONTROL  [initandlisten] 
+2017-12-16T01:01:54.243+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/weijia/Applications/mongodbfile/diagnostic.data'
+2017-12-16T01:01:54.243+0800 I NETWORK  [thread1] waiting for connections on port 27017
+2017-12-16T01:01:55.015+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-12-16T01:02:05.068+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:55589 #1 (1 connection now open)
+2017-12-16T01:02:05.068+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:55589 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.10" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:02:10.400+0800 I -        [conn1] end connection 127.0.0.1:55589 (1 connection now open)
+2017-12-16T01:21:04.058+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56159 #2 (1 connection now open)
+2017-12-16T01:21:04.112+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56160 #3 (2 connections now open)
+2017-12-16T01:21:04.115+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56161 #4 (3 connections now open)
+2017-12-16T01:21:04.116+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56162 #5 (4 connections now open)
+2017-12-16T01:21:04.117+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56163 #6 (5 connections now open)
+2017-12-16T01:21:04.119+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56164 #7 (6 connections now open)
+2017-12-16T01:21:04.121+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56165 #8 (7 connections now open)
+2017-12-16T01:21:04.122+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56166 #9 (8 connections now open)
+2017-12-16T01:21:04.123+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56167 #10 (9 connections now open)
+2017-12-16T01:21:04.125+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56168 #11 (10 connections now open)
+2017-12-16T01:21:04.127+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56169 #12 (11 connections now open)
+2017-12-16T01:21:04.128+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56170 #13 (12 connections now open)
+2017-12-16T01:21:04.129+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56171 #14 (13 connections now open)
+2017-12-16T01:21:04.131+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56172 #15 (14 connections now open)
+2017-12-16T01:21:04.133+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56173 #16 (15 connections now open)
+2017-12-16T01:21:04.134+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56174 #17 (16 connections now open)
+2017-12-16T01:21:04.135+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56175 #18 (17 connections now open)
+2017-12-16T01:21:04.137+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56176 #19 (18 connections now open)
+2017-12-16T01:21:04.138+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56177 #20 (19 connections now open)
+2017-12-16T01:21:04.139+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56178 #21 (20 connections now open)
+2017-12-16T01:21:04.140+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56179 #22 (21 connections now open)
+2017-12-16T01:21:04.288+0800 I COMMAND  [conn10] command baikespider.cl_baike_page command: insert { insert: "cl_baike_page", ordered: true, documents: [ { _id: ObjectId('5a34048015bfb305ddef5529'), code: 20, htmlContent: "<div class="before-content"> 
+</div><div class="content-wrapper"> 
+ <div class="content"> 
+  <div class="personal-content"> 
+  </div> 
+  <div class="m...", word: "多糖体", cl_updatetime: "20171216 01:20:58" } ] } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 }, acquireWaitCount: { w: 2, W: 1 }, timeAcquiringMicros: { w: 56668, W: 258 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 127ms
+2017-12-16T01:21:04.288+0800 I COMMAND  [conn13] command baikespider.cl_baike_page command: insert { insert: "cl_baike_page", ordered: true, documents: [ { _id: ObjectId('5a34048015bfb305ddef5525'), code: 13, htmlContent: "<div class="before-content"> 
+</div><div class="content-wrapper"> 
+ <div class="content"> 
+  <div class="personal-content"> 
+  </div> 
+  <div class="m...", word: "萝卜腿", cl_updatetime: "20171216 01:20:58" } ] } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 }, acquireWaitCount: { w: 2, W: 1 }, timeAcquiringMicros: { w: 52072, W: 71031 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 123ms
+2017-12-16T01:21:04.288+0800 I COMMAND  [conn21] command baikespider.cl_baike_page command: insert { insert: "cl_baike_page", ordered: true, documents: [ { _id: ObjectId('5a34048015bfb305ddef552e'), code: 9, htmlContent: "<div class="before-content"> 
+</div><div class="content-wrapper"> 
+ <div class="content"> 
+  <div class="personal-content"> 
+  </div> 
+  <div class="m...", word: "五大夫松", cl_updatetime: "20171216 01:20:58" } ] } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 }, acquireWaitCount: { w: 2, W: 1 }, timeAcquiringMicros: { w: 44485, W: 70877 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 115ms
+2017-12-16T01:21:04.288+0800 I COMMAND  [conn6] command baikespider.cl_baike_page command: insert { insert: "cl_baike_page", ordered: true, documents: [ { _id: ObjectId('5a34048015bfb305ddef5535'), code: 2, htmlContent: "<div class="before-content"> 
+</div><div class="content-wrapper"> 
+ <div class="content"> 
+  <div class="personal-content"> 
+  </div> 
+  <div class="m...", word: "词条", cl_updatetime: "20171216 01:20:58" } ] } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 }, acquireWaitCount: { w: 2, W: 1 }, timeAcquiringMicros: { w: 38745, W: 70896 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 110ms
+2017-12-16T01:21:23.774+0800 I -        [conn22] end connection 127.0.0.1:56179 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn21] end connection 127.0.0.1:56178 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn20] end connection 127.0.0.1:56177 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn19] end connection 127.0.0.1:56176 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn18] end connection 127.0.0.1:56175 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn17] end connection 127.0.0.1:56174 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn15] end connection 127.0.0.1:56172 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn16] end connection 127.0.0.1:56173 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn14] end connection 127.0.0.1:56171 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn13] end connection 127.0.0.1:56170 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn11] end connection 127.0.0.1:56168 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn12] end connection 127.0.0.1:56169 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn9] end connection 127.0.0.1:56166 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn8] end connection 127.0.0.1:56165 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn6] end connection 127.0.0.1:56163 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn5] end connection 127.0.0.1:56162 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn4] end connection 127.0.0.1:56161 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn7] end connection 127.0.0.1:56164 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn10] end connection 127.0.0.1:56167 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn3] end connection 127.0.0.1:56160 (21 connections now open)
+2017-12-16T01:21:23.774+0800 I -        [conn2] end connection 127.0.0.1:56159 (21 connections now open)
+2017-12-16T01:29:48.944+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57808 #23 (1 connection now open)
+2017-12-16T01:29:48.999+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57809 #24 (2 connections now open)
+2017-12-16T01:29:48.999+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57810 #25 (3 connections now open)
+2017-12-16T01:29:49.000+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57811 #26 (4 connections now open)
+2017-12-16T01:29:49.001+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57812 #27 (5 connections now open)
+2017-12-16T01:29:49.003+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57813 #28 (6 connections now open)
+2017-12-16T01:29:49.004+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57814 #29 (7 connections now open)
+2017-12-16T01:29:49.005+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57815 #30 (8 connections now open)
+2017-12-16T01:29:49.007+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57816 #31 (9 connections now open)
+2017-12-16T01:29:49.008+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57817 #32 (10 connections now open)
+2017-12-16T01:29:49.010+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57818 #33 (11 connections now open)
+2017-12-16T01:29:49.011+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57819 #34 (12 connections now open)
+2017-12-16T01:29:49.012+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57820 #35 (13 connections now open)
+2017-12-16T01:29:49.014+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57821 #36 (14 connections now open)
+2017-12-16T01:29:49.015+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57822 #37 (15 connections now open)
+2017-12-16T01:29:49.016+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57823 #38 (16 connections now open)
+2017-12-16T01:29:49.018+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57824 #39 (17 connections now open)
+2017-12-16T01:29:49.020+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57825 #40 (18 connections now open)
+2017-12-16T01:29:49.021+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57826 #41 (19 connections now open)
+2017-12-16T01:29:49.022+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57827 #42 (20 connections now open)
+2017-12-16T01:29:49.123+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57837 #43 (21 connections now open)
+2017-12-16T01:30:07.067+0800 I -        [conn43] end connection 127.0.0.1:57837 (21 connections now open)
+2017-12-16T01:30:07.067+0800 I -        [conn42] end connection 127.0.0.1:57827 (20 connections now open)
+2017-12-16T01:30:07.067+0800 I -        [conn40] end connection 127.0.0.1:57825 (19 connections now open)
+2017-12-16T01:30:07.067+0800 I -        [conn41] end connection 127.0.0.1:57826 (19 connections now open)
+2017-12-16T01:30:07.067+0800 I -        [conn39] end connection 127.0.0.1:57824 (17 connections now open)
+2017-12-16T01:30:07.067+0800 I -        [conn38] end connection 127.0.0.1:57823 (17 connections now open)
+2017-12-16T01:30:07.067+0800 I -        [conn36] end connection 127.0.0.1:57821 (16 connections now open)
+2017-12-16T01:30:07.067+0800 I -        [conn35] end connection 127.0.0.1:57820 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn37] end connection 127.0.0.1:57822 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn33] end connection 127.0.0.1:57818 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn32] end connection 127.0.0.1:57817 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn31] end connection 127.0.0.1:57816 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn28] end connection 127.0.0.1:57813 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn29] end connection 127.0.0.1:57814 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn27] end connection 127.0.0.1:57812 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn26] end connection 127.0.0.1:57811 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn25] end connection 127.0.0.1:57810 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn34] end connection 127.0.0.1:57819 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn24] end connection 127.0.0.1:57809 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn30] end connection 127.0.0.1:57815 (16 connections now open)
+2017-12-16T01:30:07.068+0800 I -        [conn23] end connection 127.0.0.1:57808 (16 connections now open)
+2017-12-16T01:30:39.687+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58819 #44 (1 connection now open)
+2017-12-16T01:30:39.688+0800 I NETWORK  [conn44] received client metadata from 127.0.0.1:58819 conn44: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:30:39.755+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58820 #45 (2 connections now open)
+2017-12-16T01:30:39.755+0800 I NETWORK  [conn45] received client metadata from 127.0.0.1:58820 conn45: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:30:44.476+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58821 #46 (3 connections now open)
+2017-12-16T01:30:44.476+0800 I NETWORK  [conn46] received client metadata from 127.0.0.1:58821 conn46: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:30:44.517+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58822 #47 (4 connections now open)
+2017-12-16T01:30:44.518+0800 I NETWORK  [conn47] received client metadata from 127.0.0.1:58822 conn47: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:30:58.096+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58824 #48 (5 connections now open)
+2017-12-16T01:30:58.096+0800 I NETWORK  [conn48] received client metadata from 127.0.0.1:58824 conn48: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:30:58.131+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58825 #49 (6 connections now open)
+2017-12-16T01:30:58.131+0800 I NETWORK  [conn49] received client metadata from 127.0.0.1:58825 conn49: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:31:52.009+0800 I -        [conn48] end connection 127.0.0.1:58824 (6 connections now open)
+2017-12-16T01:31:52.013+0800 I -        [conn49] end connection 127.0.0.1:58825 (5 connections now open)
+2017-12-16T01:31:53.703+0800 I -        [conn46] end connection 127.0.0.1:58821 (4 connections now open)
+2017-12-16T01:31:53.704+0800 I -        [conn47] end connection 127.0.0.1:58822 (3 connections now open)
+2017-12-16T01:31:55.074+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58832 #50 (3 connections now open)
+2017-12-16T01:31:55.074+0800 I NETWORK  [conn50] received client metadata from 127.0.0.1:58832 conn50: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:31:55.104+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58833 #51 (4 connections now open)
+2017-12-16T01:31:55.104+0800 I NETWORK  [conn51] received client metadata from 127.0.0.1:58833 conn51: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2017-12-16T01:32:51.749+0800 I COMMAND  [conn44] CMD: drop baikespider.cl_baike_wrong_code
+2017-12-16T01:32:55.450+0800 I COMMAND  [conn44] CMD: drop baikespider.cl_baike_page
+2017-12-16T01:33:12.861+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58884 #52 (5 connections now open)
+2017-12-16T01:33:12.897+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58886 #53 (6 connections now open)
+2017-12-16T01:33:12.898+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58885 #54 (7 connections now open)
+2017-12-16T01:33:12.899+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58887 #55 (8 connections now open)
+2017-12-16T01:33:12.901+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58888 #56 (9 connections now open)
+2017-12-16T01:33:12.902+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58889 #57 (10 connections now open)
+2017-12-16T01:33:12.903+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58890 #58 (11 connections now open)
+2017-12-16T01:33:12.905+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58891 #59 (12 connections now open)
+2017-12-16T01:33:12.907+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58892 #60 (13 connections now open)
+2017-12-16T01:33:12.908+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58893 #61 (14 connections now open)
+2017-12-16T01:33:12.910+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58894 #62 (15 connections now open)
+2017-12-16T01:33:12.913+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58895 #63 (16 connections now open)
+2017-12-16T01:33:12.915+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58896 #64 (17 connections now open)
+2017-12-16T01:33:12.918+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58897 #65 (18 connections now open)
+2017-12-16T01:33:12.920+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58898 #66 (19 connections now open)
+2017-12-16T01:33:12.922+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58899 #67 (20 connections now open)
+2017-12-16T01:33:12.923+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58900 #68 (21 connections now open)
+2017-12-16T01:33:12.931+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58901 #69 (22 connections now open)
+2017-12-16T01:33:12.931+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58902 #70 (23 connections now open)
+2017-12-16T01:33:12.932+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58903 #71 (24 connections now open)
+2017-12-16T01:33:12.932+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58904 #72 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn72] end connection 127.0.0.1:58904 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn70] end connection 127.0.0.1:58902 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn71] end connection 127.0.0.1:58903 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn68] end connection 127.0.0.1:58900 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn69] end connection 127.0.0.1:58901 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn67] end connection 127.0.0.1:58899 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn66] end connection 127.0.0.1:58898 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn65] end connection 127.0.0.1:58897 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn64] end connection 127.0.0.1:58896 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn62] end connection 127.0.0.1:58894 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn63] end connection 127.0.0.1:58895 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn61] end connection 127.0.0.1:58893 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn59] end connection 127.0.0.1:58891 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn60] end connection 127.0.0.1:58892 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn58] end connection 127.0.0.1:58890 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn57] end connection 127.0.0.1:58889 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn56] end connection 127.0.0.1:58888 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn55] end connection 127.0.0.1:58887 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn53] end connection 127.0.0.1:58886 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn54] end connection 127.0.0.1:58885 (25 connections now open)
+2017-12-16T01:33:32.092+0800 I -        [conn52] end connection 127.0.0.1:58884 (25 connections now open)
