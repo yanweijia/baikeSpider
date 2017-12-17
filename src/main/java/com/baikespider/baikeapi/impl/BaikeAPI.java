@@ -1,6 +1,7 @@
 package com.baikespider.baikeapi.impl;
 
 import com.baikespider.baikeapi.SearchAPI;
+import com.baikespider.exception.BaikeNotFoundException;
 import com.baikespider.utils.MongoDB;
 import com.baikespider.vo.BaikeResult;
 import org.apache.http.client.utils.URIBuilder;
@@ -50,14 +51,14 @@ public class BaikeAPI implements SearchAPI {
             String word = doc.getElementsByTag("h1").first().text();
             String htmlContent = parseHTMLContent(doc);
             if (htmlContent == null)
-                throw new Exception("不存在该词条");
+                throw new BaikeNotFoundException("不存在该词条");
             BaikeResult baikeResult = new BaikeResult(pageCode, word, htmlContent);
-            writeResultToDB(baikeResult);
-            return baikeResult;
-        } catch (Exception e) {
-            logger.error(String.format("编号 [%s] 页面内容获取失败!", "" + pageCode), e);
-            writeWrongInfoToDB(pageCode, e.getMessage());
-        }
+        writeResultToDB(baikeResult);
+        return baikeResult;
+    } catch (Exception e) {
+        logger.error(String.format("编号 [%s] 页面内容获取失败!", "" + pageCode), e);
+        writeWrongInfoToDB(pageCode, e.getClass(), e.getMessage());
+    }
         return null;
     }
 
@@ -81,10 +82,11 @@ public class BaikeAPI implements SearchAPI {
      * 将爬取失败的 code 记录到数据库
      *
      * @param code   词条编号
+     * @param type   错误类名
      * @param reason 错误原因
      * @return
      */
-    private boolean writeWrongInfoToDB(Integer code, String reason) {
+    private boolean writeWrongInfoToDB(Integer code, Class type, String reason) {
         try {
             Map<String, Object> map = new HashMap<>();
             map.put("code", code);
