@@ -7,12 +7,14 @@ Author: [严唯嘉](http://www.yanweijia.cn)
 ## 使用方法
 请看`com.baikespider.main.Main`
 ```shell
-java -jar baikespider.jar 开始编号 结束编号
+java -jar baikespider.jar 线程个数 开始编号 结束编号
 如:
-    java -jar baikespider.jar 1 100
+    java -jar baikespider.jar 50 1 10000
 ```
 
 配置文件请看`src/main/resources/`文件夹
+
+jar包的生成请运行 maven 的 package 命令 `mvn package`
 
 |||
 |---|---|
