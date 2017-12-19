@@ -18,8 +18,16 @@ public class Main {
      * @param args 参数
      */
     public static void main(String[] args) {
-        String arg[] = {"1", "1000"};
-        spider(arg);
+        if (args.length != 3) {
+            System.out.println("命令格式如下: " +
+                    "\n\t参数1 线程数" +
+                    "\n\t参数2 开始词条编号" +
+                    "\n\t参数3 结束词条编号" +
+                    "\n\t   例子:  java -jar baikespider.jar 20 1 100");
+
+            args = new String[]{"20", "1", "1"};
+        }
+        spider(args);
     }
 
     /**
@@ -27,18 +35,15 @@ public class Main {
      */
     public static void spider(String[] args) {
         logger.info("~~~程序开始运行~~~");
-        if (args.length != 2) {
-            System.out.println("命令格式如下: " +
-                    "\n\t参数1 开始词条编号" +
-                    "\n\t参数2 结束词条编号" +
-                    "\n\t   例子:  java -jar baikespider.jar 1 100");
+        if (args.length != 3) {
             return;
         }
         try {
-            Integer fromNum = Integer.parseInt(args[0]);
-            Integer toNum = Integer.parseInt(args[1]);
+            Integer threadNum = Integer.parseInt(args[0]);
+            Integer fromNum = Integer.parseInt(args[1]);
+            Integer toNum = Integer.parseInt(args[2]);
             //多线程爬虫代码
-            ExecutorService fixedThreadPool = Executors.newFixedThreadPool(20);
+            ExecutorService fixedThreadPool = Executors.newFixedThreadPool(threadNum);
             do {
                 Integer finalFromNum = fromNum;
                 fixedThreadPool.execute(new Runnable() {

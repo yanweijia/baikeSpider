@@ -53,12 +53,12 @@ public class BaikeAPI implements SearchAPI {
             if (htmlContent == null)
                 throw new BaikeNotFoundException("不存在该词条");
             BaikeResult baikeResult = new BaikeResult(pageCode, word, htmlContent);
-        writeResultToDB(baikeResult);
-        return baikeResult;
-    } catch (Exception e) {
-        logger.error(String.format("编号 [%s] 页面内容获取失败!", "" + pageCode), e);
-        writeWrongInfoToDB(pageCode, e.getClass(), e.getMessage());
-    }
+            writeResultToDB(baikeResult);
+            return baikeResult;
+        } catch (Exception e) {
+            logger.error(String.format("编号 [%s] 页面内容获取失败!", "" + pageCode), e);
+            writeWrongInfoToDB(pageCode, e.getClass(), e.getMessage());
+        }
         return null;
     }
 
